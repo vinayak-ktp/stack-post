@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
+
+.shadow-bottom {
+    box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.3), 
+                0 2px 2px -1px rgba(0, 0, 0, 0.2);  
+}
+
+* {
+    font-family: montserrat;
+    @apply transition-all duration-200;
+}
+
+a {
+    color: inherit;
+}
+
+input {
+    @apply text-zinc-700 font-semibold w-full py-1 px-2 outline-none;
+}
+
+.input-pair {
+    @apply flex;
+}
+
+button {
+    @apply hover:cursor-pointer;
+}
