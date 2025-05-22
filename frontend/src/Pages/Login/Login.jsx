@@ -38,7 +38,7 @@ const Login = () => {
   }
 
   return (
-    <main className='w-screen h-screen flex justify-center items-center bg-zinc-200'>
+    <main className='w-screen h-screen flex justify-center items-center bg-linear-to-b from-zinc-300 to-zinc-100'>
       <div className='shadow-md px-8 py-6 rounded-lg w-sm bg-zinc-100'>
         <h1 className='text-2xl font-bold text-left'>Sign In</h1>
         <p className='mb-6 text-xs font-semibold'>Create. Share. Inspire.</p>

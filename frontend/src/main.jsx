@@ -7,6 +7,8 @@ import Login from './Pages/Login/Login.jsx'
 import Register from './Pages/Register/Register.jsx'
 import Profile from './Pages/Profile/Profile.jsx'
 import CreatePost from './Pages/CreatePost/CreatePost.jsx'
+import BlogPost from './Pages/BlogPost/BlogPost.jsx'
+import EditPost from './Pages/EditPost/EditPost.jsx'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,21 @@ const router = createBrowserRouter([
   {
     path: '/create',
     element: <CreatePost />
+  },
+  {
+    path: '/posts/:id',
+    element: <BlogPost />
+  },
+  {
+    path: '/edit/:id',
+    element: <EditPost />
+  },
+  {
+    path: '/gay',
+    loader: () => {
+      window.location.href = 'http://localhost:3000/gay';
+      return null;
+    }
   }
 ]);
 

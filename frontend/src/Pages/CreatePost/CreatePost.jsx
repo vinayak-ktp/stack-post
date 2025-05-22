@@ -42,7 +42,7 @@ const CreatePost = () => {
   }
 
   return (
-    <div className="fixed inset-0 w-screen h-screen flex items-center justify-center m-0 p-0">
+    <div className="fixed inset-0 w-screen h-screen flex items-center justify-center m-0 p-0 bg-linear-to-b from-zinc-300 to-zinc-100">
       <form onSubmit={handleSubmit} className="w-full h-full max-w-none max-h-none p-8 rounded-none shadow-none flex flex-col gap-6 justify-center">
         <div>
           <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-1">

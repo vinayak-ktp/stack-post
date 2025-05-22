@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +7,8 @@ const Register = () => {
     email: '',
     password: '',
   });
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const {name, value} = e.target;
@@ -26,14 +28,14 @@ const Register = () => {
       }
     });
     if(response.ok) {
-      alert("registration successfull!");
+      navigate('/login')
     } else {
       alert("registration failed!");
     }
   }
 
   return (
-    <main className='w-screen h-screen flex justify-center items-center bg-zinc-200'>
+    <main className='w-screen h-screen flex justify-center items-center bg-linear-to-b from-zinc-300 to-zinc-100'>
       <div className='shadow-md px-8 py-6 w-sm rounded-lg bg-zinc-100'>
         <h1 className='text-2xl font-bold text-left'>Sign Up</h1>
         <p className='mb-6 text-xs font-semibold'>Unlock Your Creativity!</p>
