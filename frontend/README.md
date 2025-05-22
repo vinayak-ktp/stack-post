@@ -1,12 +1,30 @@
-# React + Vite
+# 📝 Stack Post - Blogging App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic and user-friendly blogging application developed using the MERN stack (MongoDB, Express, React, Node.js). It allows users to sign up, log in, write and manage their own blog posts, as well as explore content created by others — with or without being logged in.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 **User Authentication**
+  - Register and log in securely
+  - Session-based or token-based authentication (e.g., JWT)
 
-## Expanding the ESLint configuration
+- ✍️ **Create & Manage Posts**
+  - Authenticated users can create new blog posts
+  - Edit or update your existing posts
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📖 **Read & Browse Blogs**
+  - View all published posts
+  - Access any blog on a dedicated page
+  - Publicly accessible: browse posts without logging in
+
+- 🖥️ **Modern UI/UX**
+  - Responsive design using React
+  - Intuitive layout for easy content creation and browsing
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, React Router, Axios
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB (Mongoose ODM)
+- **Authentication**: JWT, Bcrypt
+- **State Management**: useState, useEffect, useContext
