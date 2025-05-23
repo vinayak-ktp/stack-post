@@ -58,7 +58,7 @@ const Home = () => {
               onChange={e => setSearchText(e.target.value)}
             />
           </div>
-          <a href={username ? `/profile/` : '/login'} className='px-1 text-xl border-2 rounded-lg'><i className="ri-user-fill"></i></a>
+          <a href={username ? `/profile/` : '/login'} className={'px-1 text-xl border-2 rounded-lg ' + (username ? 'bg-green-500' : 'bg-red-500')}><i className="ri-user-fill"></i></a>
         </div>
         <BlogList posts={filteredPosts} />
       </div>

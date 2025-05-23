@@ -27,7 +27,7 @@ const TopPost = ({ post }) => {
           <p>Top Post</p>
         </div> */}
         <div className='text-white absolute bottom-0 p-4 pt-20 text-xl font-semibold bg-linear-to-t from-black to-transparent z-20 tracking-wide w-full'>
-          <p className='mb-2 text-blue-500'>{author.username}</p>
+          <p className='mb-1 text-blue-500'>{author.username}</p>
           <p>{title}</p>
         </div>
       </div>

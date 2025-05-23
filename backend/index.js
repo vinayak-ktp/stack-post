@@ -88,7 +88,22 @@ app.post('/login', async (req, res) => {
 app.get('/profile/', (req, res) => {
     try {
         const { token } = req.cookies;
-        const user = jwt.verify(token, process.env.SECRET_KEY);
+        if (token) {
+            const user = jwt.verify(token, process.env.SECRET_KEY);
+            res.json(user);
+        }
+    } catch(err) {
+        console.error(err);
+    }
+});
+
+app.get('/user/:username', async (req, res) => {
+    const username = req.params.username
+    try {
+        const user = await userModel.findOne({ username });
+        if (!user) {
+            return res.status(404).json('User Not Found!');
+        }
         res.json(user);
     } catch(err) {
         console.error(err);

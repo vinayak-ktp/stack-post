@@ -79,9 +79,10 @@ const Profile = () => {
               {posts.map((post, idx) => (
                 <div
                   key={post._id || idx}
-                  className='flex items-center justify-between border rounded-md my-2 border-zinc-400 p-2 cursor-pointer hover:bg-zinc-300 transition'
+                  className='flex items-center justify-between border rounded-md my-2 border-zinc-400 p-2 cursor-pointer hover:bg-zinc-300 transition relative overflow-hidden'
                   onClick={() => navigate(`/posts/${post._id}`)}
                 >
+                  <div className='h-12 absolute left-0 top-0 w-1 bg-indigo-500'></div>
                   <h1 className='text-lg font-semibold'>{post.title}</h1>
                   <div
                     className="flex"

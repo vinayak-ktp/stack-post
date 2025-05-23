@@ -9,6 +9,7 @@ import Profile from './Pages/Profile/Profile.jsx'
 import CreatePost from './Pages/CreatePost/CreatePost.jsx'
 import BlogPost from './Pages/BlogPost/BlogPost.jsx'
 import EditPost from './Pages/EditPost/EditPost.jsx'
+import User from './Pages/User/User.jsx'
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: '/edit/:id',
     element: <EditPost />
+  },
+  {
+    path: '/user/:username',
+    element: <User />
   },
   {
     path: '/gay',
